@@ -7,8 +7,8 @@ import com.nhnacademy.hochul.exception.NotEnoughMoney;
 import com.nhnacademy.hochul.user.User;
 
 public class Car {
-    private String carNumber;
-    private User user;
+    private final String carNumber;
+    private final User user;
     private String parkingNumber ="";
     private CarType carType;
 

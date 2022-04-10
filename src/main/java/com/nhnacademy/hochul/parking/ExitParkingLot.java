@@ -10,8 +10,8 @@ import com.nhnacademy.hochul.user.User;
 import java.util.Map;
 
 public class ExitParkingLot {
-    private PaycoServer paycoServer = new PaycoServer();
-    private ParkingLotPolicy policy = new ParkingLotFeeVersion2();
+    private final PaycoServer paycoServer = new PaycoServer();
+    private final ParkingLotPolicy policy = new ParkingLotFeeVersion2();
 
     public void exit(Map<String, Car> map, Car car, int time){
         time -= checkCoupon(car.getUser().getCoupon());

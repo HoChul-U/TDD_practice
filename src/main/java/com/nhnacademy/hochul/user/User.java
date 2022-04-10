@@ -3,9 +3,10 @@ package com.nhnacademy.hochul.user;
 import static com.nhnacademy.hochul.user.UserType.NORMAL;
 
 public class User {
-    private UserType userType;
+    private final UserType userType;
+    private final int coupon;
     private long money;
-    private int coupon;
+
 
     public User(UserType userType, long money) {
         this(userType,money,0);
